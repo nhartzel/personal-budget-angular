@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <meta name="description" content="A free personal budger app">
+    <!-- This is an SEO change -->
+    <meta name="description" content="Your free tool for financial freedom!">
     <meta name="keywords" content="app free budget finance">
+    <!-- This is an SEO change -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -13,18 +15,22 @@
 
 <a href="#main" class="skip">Skip to content</a>
 
-    <nav>
+    <!-- This is an A11y change --> 
+    <nav aria-label="main navigation links">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <!-- This is an SEO change -->
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </nav>
 
     <div class="hero">
         <h1>Personal Budget</h1>
-        <h2>A personal-budget management app</h2>
+        <!-- This is a Semantic HTML change -->
+        <h2>Your pathway to financial success!</h2>
     </div>
 
     <main class="center" id="main">
@@ -32,7 +38,8 @@
         <div class="page-area">
 
             <article>
-                <h1>Stay on track</h1>
+                <!-- A11y change, switched to H2 headings-->
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -41,14 +48,16 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <!-- This is a Semantic change -->
+                <h2>Live Budgeting Alerts</h2>
                 <p>
-                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                    To make sure you always have the right information as soon as you need it, we provide 
+                    immediate alerts when you've exceeded your budget in any category. 
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -57,14 +66,16 @@
             </article>
     
             <article>
-                <h1>Free</h1>
+                <!-- This is a Semantic change -->
+                <h2>Free, Fast, and Secure!</h2>
                 <p>
-                    This app is free!!! And you are the only one holding your data!
+                    Not only is this app completely free, but we do not store any of your personal data. 
+                    Save money and sleep soundly knowing we've got your back!
                 </p>
             </article>
     
             <article>
-                <h1>Stay on track</h1>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -73,14 +84,14 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -89,9 +100,10 @@
             </article>
     
             <article>
-                <h1>Chart</h1>
+                <h2>Chart</h2>
+                <!-- This is an A11y change -->
                 <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <canvas id="myChart" width="400" height="400" aria-label="A pie chart displaying your budget information"></canvas>
                 </p>
             </article>
 
