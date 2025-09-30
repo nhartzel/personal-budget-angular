@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Chart, ArcElement, PieController, Legend, Tooltip } from 'chart.js';
+import { DataService } from '../data.service';
 
 Chart.register(ArcElement, PieController, Legend, Tooltip);
 
@@ -30,10 +31,10 @@ export class HomepageComponent implements OnInit {
     labels: []
 };
 
-  constructor(private http: HttpClient) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:3000/budget')
+    this.dataService.getBudgetData()
     .subscribe((res: any) => {
       for (var i = 0; i < res.myBudget.length; i++) {
         this.dataSource.datasets[0].data[i] = res.myBudget[i].budget;

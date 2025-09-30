@@ -20,6 +20,7 @@
   "homepage": "https://github.com/nhartzel/personal-budget#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "d3": "^7.9.0",
     "express": "^4.21.2"
   }
 }
